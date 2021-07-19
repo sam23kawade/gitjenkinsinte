@@ -127,16 +127,16 @@ dff.describe()
 
 plt.scatter(dff['Delta'], df['Creation day'])
 plt.ylabel("Creation Days")
-plt.show()
+#plt.show()
 plt.scatter(dff['Delta'], df['Sold-to pt'])
 plt.ylabel("Customers")
-plt.show()
+#plt.show()
 plt.scatter(dff['Delta'], df['Material'])
 plt.ylabel("Products")
-plt.show()
+#plt.show()
 plt.scatter(dff['Sold-to pt'], df['Material'])
 plt.ylabel("Products")
-plt.show()
+#plt.show()
 
 
 # In[167]:
@@ -150,7 +150,7 @@ for source in source_list:
 plt.bar(list(source_dict.keys()),  list(source_dict.values()))
 print(source_dict, "{'00F4':0, '0026':1, '0037':2}")
 plt.xlabel("Plant/Sourceloc")
-plt.show()
+#plt.show()
 
 product_list = list(dff['Posting day'].unique())
 prod_dict={}
@@ -159,7 +159,7 @@ for prod in product_list:
     
 plt.bar(list(prod_dict.keys()),  list(prod_dict.values()))
 plt.xlabel("Posting day")
-plt.show()
+#plt.show()
 
 
 created_list = list(dff['Creation day'].unique())
@@ -169,7 +169,7 @@ for cred in created_list:
     
 plt.bar(list(cred_dict.keys()),  list(cred_dict.values()))
 plt.xlabel("Creation Day")
-plt.show()
+#plt.show()
 
 
 route_list= list(dff['Route'].unique())
@@ -180,7 +180,7 @@ for rout in route_list:
 plt.bar(list(route_dict.keys()),  list(route_dict.values()))
 plt.xlabel("Route-Truck/Air")
 print(route_dict, "{'TRUCK':0, 'AIR':1}")
-plt.show()
+#plt.show()
 
 
 # In[168]:
@@ -193,7 +193,7 @@ for prod in product_list:
     
 plt.bar(list(prod_dict.keys()),  list(prod_dict.values()))
 plt.xlabel("Customers")
-plt.show()
+#plt.show()
 
 product_list = list(dff['Material'].unique())
 prod_dict={}
@@ -202,14 +202,14 @@ for prod in product_list:
     
 plt.bar(list(prod_dict.keys()),  list(prod_dict.values()))
 plt.xlabel("Products")
-plt.show()
+#plt.show()
 
 
 # In[169]:
 
 
 plt.hist(dff['Delta'])
-plt.show() 
+#plt.show() 
 
 
 # In[170]:
@@ -227,7 +227,7 @@ print(df_filtered.shape)
 
 
 plt.hist(df_filtered['Delta'])
-plt.show() 
+#plt.show() 
 
 
 # In[172]:
@@ -240,7 +240,7 @@ for prod in product_list:
     
 plt.bar(list(prod_dict.keys()),  list(prod_dict.values()))
 plt.xlabel("Customers")
-plt.show()
+#plt.show()
 
 product_list = list(df_filtered['Material'].unique())
 prod_dict={}
@@ -249,7 +249,7 @@ for prod in product_list:
     
 plt.bar(list(prod_dict.keys()),  list(prod_dict.values()))
 plt.xlabel("Products")
-plt.show()
+#plt.show()
 
 
 # In[173]:
@@ -426,7 +426,7 @@ concatenated_data = pd.concat([Norm_df[['Item', 'Quantity','Delta']], encoded_da
 # In[190]:
 
 
-concatenated_data
+#concatenated_data
 
 
 # In[191]:
